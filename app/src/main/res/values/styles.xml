@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme">theme</style>
+
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+    </style>
+
+    <!--<style name="Theme.Custom" parent="Theme.AppCompat">-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowActionBarOverlay">true</item>-->
+        <!--<item name="android:windowActionBarOverlay">true</item>-->
+    <!--</style>-->
+
+    <!--<style name="CustomActionBar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+        <!--<item name="android:windowActionBarOverlay">true</item>-->
+        <!--&lt;!&ndash; Support library compatibility &ndash;&gt;-->
+        <!--<item name="windowActionBarOverlay">true</item>-->
+    <!--</style>-->
+</resources>

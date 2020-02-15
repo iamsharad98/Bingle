@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.komu.komu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Camera Permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- External Storage Permission -->
+    <application
+        android:name=".komu"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/binglelogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.ads.in.komu.komu" -->
+        <!-- android:value="ca-app-pub-3107402835218906~8122581888"/> -->
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- Authentication Activity -->
+        <activity
+            android:name=".Authentication.ChooseLoginRegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".Authentication.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Authentication.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <!-- Profile -->
+        <activity
+            android:name=".Profile.activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".Profile.activity_accountSetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.showCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".Profile.EditProfileFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile.SignOutFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".share.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".share.NextActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".share.OpenGalleryImage"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".Search.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.VideoCapture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.MediaActivity"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".Home.OpenPicNewsfeed"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name=".Home.ActivityContestGrid"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.ActivityNotification"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity android:name=".Profile.ActivityProfileDetails"></activity>
+    </application>
+
+</manifest>

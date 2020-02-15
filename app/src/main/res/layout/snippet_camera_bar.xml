@@ -1,0 +1,106 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/transparent"
+        android:layout_marginTop="25dp"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileToolBar"
+
+            android:background="@drawable/underline_transparent_background">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/topToolbar1"
+                    >
+
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/disco"
+                        android:id="@+id/profileButton"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@+id/profileButton"
+                        android:src="@drawable/search"
+                        android:id="@+id/search_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:layout_toRightOf="@+id/search_icon"
+                        android:text="Search"
+                        android:textSize="22sp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColorHint="@color/white"
+                        android:id="@+id/etSearch"
+                        />
+                    <!--<ImageView-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_toLeftOf="@+id/notification"-->
+                        <!--android:src="@drawable/flash"-->
+                        <!--android:id="@+id/flashLight"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--/>-->
+                    <!--<ImageView-->
+                        <!--android:layout_width="40dp"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/notification"-->
+                        <!--android:id="@+id/notification"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--/>-->
+
+                    <ImageView
+                        android:id="@+id/notification"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/notification"
+                        android:dropDownWidth="200dp"
+                        android:popupBackground="@color/white"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</merge>

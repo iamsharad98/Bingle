@@ -1,0 +1,198 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">bingle</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chat_fragment">Chat Fragment</string>
+    <string name="camera_fragment">Camera_Fragment</string>
+    <string name="story_fragment">Story Fragment</string>
+    <!--<string name="profile_fragment">Profile</string>-->
+
+
+    <!--  View Post Fragment -->
+    <string name="TODAY">TODAY</string>
+    <string name="days_ago"> DAYS AGO</string>
+    <string name="all_media">ALL MEDIA</string>
+
+
+    <string name="camera">Camera</string>
+    <string name="login_button">Login</string>
+    <string name="register_button">Register</string>
+    <string name="todo">TODO</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="auth_failed">Authentication is failed. Please Try Again…</string>
+    <string name="auth_success">Authentication successful...</string>
+
+    <!-- Database -->
+    <string name="db_users_profile">users_profile</string>
+    <string name="db_user_account_setting">user_account_setting</string>
+    <string name="db_photos">photos</string>
+    <string name="db_following">following</string>
+    <string name="db_follower">follower</string>
+    <string name="db_user_photos">user_photos</string>
+    <string name="db_videos">videos</string>
+    <string name="db_all_videos">all_videos</string>
+    <string name="dbname_user_account_settings">user_account_setting</string>
+
+
+    <string name="notification_fragment">Notification Fragment</string>
+    <string name="logout">LogOut</string>
+    <string name="profile">Profile</string>
+    <string name="capture">capture</string>
+    <string name="search">Search</string>
+    <string name="user_id">user_id</string>
+
+    <!-- fragment names -->
+    <string name="edit_profile_fragment">Edit Profile</string>
+    <string name="view_post_fragment">View Post</string>
+    <string name="view_video_fragment">View Video</string>
+    <string name="sign_out_fragment">Sign Out</string>
+    <string name="profile_fragment" tools:ignore="DuplicateDefinition">Profile</string>
+    <string name="view_profile_fragment">ViewProfile</string>
+    <string name="view_comments_fragment">View Comments</string>
+
+    // firebase field names
+    <string name="field_username">username</string>
+    <string name="field_email">email</string>
+    <string name="field_display_name">display_name</string>
+    <string name="field_website">website</string>
+    <string name="field_description">description</string>
+    <string name="field_phone_number">phone_number</string>
+    <string name="field_user_id">user_id</string>
+    <string name="field_likes">likes</string>
+    <string name="field_caption">caption</string>
+    <string name="field_date_created">date_created</string>
+    <string name="field_photo_id">photo_id</string>
+    <string name="field_tags">tags</string>
+    <string name="field_image_path">image_path</string>
+    <string name="field_comments">comments</string>
+    <string name="field_comment">comment</string>
+    <string name="field_image_uri">image_uri</string>
+    <string name="field_video_uri">video_uri</string>
+    <string name="field_story_id">story_id</string>
+    <string name="field_views">views</string>
+    <string name="field_duration">duration</string>
+    <string name="field_profile_photo">profile_photo</string>
+    <string name="field_timestamp">timestamp</string>
+
+    <!--Videos-->
+    <string name="field_video_id">video_id</string>
+    <string name="field_time_stamp">timestamp</string>
+    <string name="field_video_url">video_url</string>
+    <string name="field_video_views">views</string>
+    <string name="field_video_duration">duration</string>
+    <string name="field_thumbPath">thumb_url</string>
+    <string name="field_category">category</string>
+
+    <!--ViewPager Tabs-->
+    <string name="photos_tab">Photos</string>
+    <string name="videos_tab">Videos</string>
+
+    <!-- activity names -->
+    <string name="profile_activity">Profile Activity</string>
+    <string name="search_activity">Search Activity</string>
+    <string name="home_activity">Home Activity</string>
+
+    <string name="calling_activity">calling_activity</string>
+    <string name="display_name">display name</string>
+    <string name="field_post_type">post_type</string>
+
+
+    <string name="all_photos">ALL</string>
+    <string name="gallery">GALLERY</string>
+
+    // share
+    <string name="user_photos">user_photos</string>
+    // image type
+    <string name="new_photo">new_photo</string>
+    <string name="profile_photo">profile_photo</string>
+
+
+    // Video Type
+    <string name="new_video">new_video</string>
+
+
+    <!-- Camera Roll Fragment Names -->
+
+    <string name="photos">PHOTOS</string>
+    <string name="videos">VIDEOS</string>
+
+
+    <!-- Intent Extras -->
+    <string name="selected_image">selected_image</string>
+    <string name="selected_bitmap">selected_bitmap</string>
+    <string name="return_to_fragment">return_to_fragment</string>
+    <string name="intent_user">intent_user</string>
+    <string name="user_stories">user_stories</string>
+    <string name="imageshared">imageShared</string>
+    <string name="string_share">Share</string>
+    <string name="string_write_a_description">Write a description...</string>
+    <!--<string name="sharad_pareek">Sharad_pareek</string>-->
+    <string name="sampleComment">What are you trying to get rid of me for? You got plans?</string>
+    <string name="sampleDanceQuote">Talent is God given. Be humble.</string>
+    <string name="dance">Dance Contest</string>
+    <string name="post_image">postImage</string>
+    <string name="contest_type">contest_type</string>
+    <string name="main_activity">MainActivity</string>
+    <string name="ActivityContestGrid">ActivityContestGrid</string>
+
+
+    <!--Contest Field-->
+    <string name="db_contest">contest</string>
+    <string name="fragment_trending">Trending</string>
+    <string name="fragment_contest">Contest</string>
+    <string name="fragment_newsfeed_photo">Photo</string>
+    <string name="fragment_newsfeed_video">Video</string>
+
+
+    <!-- notificationn-->
+    <string name="db_notification">notification</string>
+    <string name="db_share">share</string>
+    <string name="video_type">video</string>
+    <string name="photo_type">photo</string>
+
+
+    <!--Activity to pass for comment inteface-->
+    <string name="newsfeed_photo">Newsfeed Photo</string>
+    <string name="newsfeed_video">Newsfeed Video</string>
+
+
+    <!--Notification Text-->
+    <string name="text_like_photo">likes your photo</string>
+    <string name="text_comment_photo">comment on your photo</string>
+    <string name="text_like_video">likes your video</string>
+    <string name="text_comment_video">comment on your video</string>
+    <string name="field_notification_type">notification_type</string>
+    <string name="field_post_id">post_id</string>
+    <string name="field_post_path">post_path</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="no_videos_yet">No Videos Yet In this Category</string>
+    <string name="bingle">bingle</string>
+
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

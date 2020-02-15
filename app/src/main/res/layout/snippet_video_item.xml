@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/relLayout1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp">-->
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--android:id="@+id/profile_photo"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--app:civ_border_color="@color/grey"-->
+                    <!--app:civ_border_width="0.5dp"-->
+                    <!--android:src="@drawable/snapchatlogo"/>-->
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/username"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_toRightOf="@+id/profile_photo"-->
+                    <!--android:text="@string/sharad_pareek"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="12sp" />-->
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/ivEllipses"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:src="@drawable/ic_ellipses" />-->
+
+
+            <!--</RelativeLayout>-->
+
+            <!--<in.komu.komu.Utils.SquareImageView-->
+            <!--android:id="@+id/postImage"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/relLayout1"-->
+            <!--android:scaleType="centerCrop" />-->
+
+            <VideoView
+                android:id="@+id/videoPost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:id="@+id/relLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/videoPost"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/heartLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/image_heart_red"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ic_heart_red"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/image_heart"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ic_heart_white"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ic_comment"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@+id/heartLayout"
+                    android:src="@drawable/ic_comment"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ic_share"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ic_comment"
+                    android:src="@drawable/ic_arrow_share"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout2"
+                android:background="@color/white"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tvLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liked by Sharad, Kajal, Lucky and 30 others"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNameCaption"
+                    android:layout_below="@+id/tvLikes">
+
+                    <TextView
+                        android:id="@+id/imgCaption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@+id/tvUsername"
+                        android:text="@string/sampleComment"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/image_comments_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvNameCaption"
+                    android:layout_marginTop="4dp"
+                    android:text="View all 88 comments"
+                    android:textColor="@color/grey"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/image_time_posted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_comments_link"
+                    android:layout_marginTop="3dp"
+                    android:text="3 HOURS AGO"
+                    android:textColor="@color/light_grey"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

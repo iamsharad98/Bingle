@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="yellow">#fffc00</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="red">#f00</color>
+    <color name="purple">#a811ff</color>
+    <color name="grey">#918b8e</color>
+    <color name="green">#32a463</color>
+    <color name="light_red">#ff4f55</color>
+    <color name="light_blue">#8a82ff</color>
+    <color name="dark_blue">#033955</color>
+    <color name="low_opacity_white">#eaffffff</color>
+    <color name="awesome_red">#f04157</color>
+    <color name="fade_white">#dfffdb</color>
+    <color name="light_grey">#c2bec0</color>
+    <color name="cute_grey">#6e6d6d</color>
+    <color name="dark_grey">#403f3f</color>
+    <color name="bingle_logo_color">#16a67d</color>
+
+    <color name="cute_white">#cfcaca</color>
+    <color name="cute_black">#242429</color>
+    <color name="transparent">#00242429</color>
+    <color name="shadow_grey">#3d9e9e9e</color>
+    <color name="shadow_black">#62000000</color>
+    <color name="cute_blue">#0d93c2</color>
+    <color name="shadow_white">#4affffff</color>
+    <color name="cutest_white">#ffe0b2</color>
+    <color name="dark_purple">#322030</color>
+    <color name="shadow_dark_black">#98000000</color>
+    <color name="cute_purple">#e2b4fc</color>
+    <color name="cute_dark_purple">#553171</color>
+
+    <color name="cute_light_grey">#e5e8ea</color>
+    <color name="cutest_grey_item">#7c808c</color>
+    <color name="cutest_green">#64d8d7</color>
+
+
+
+
+
+
+
+
+
+
+
+    <color name="link_blue">#82b4ff</color>
+    <color name="pink_genrebar">#f4ff3572</color>
+    <color name="orange_genrebar">#f4fa384f</color>
+    <color name="transparent_green">#e364fc6b</color>
+    <color name="greenish_splas">#d2ffe4</color>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

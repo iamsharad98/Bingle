@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "in.komu.komu"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 5
+        versionName "5.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //elastic header
+    implementation 'com.github.eschao:android-ElasticListView:v1.0'
+    // Collapsing Toolbar
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //Rounded Corner ImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //AdMob
+//    implementation 'com.google.android.gms:play-services-ads:15.0.1'
+
+    // Universal Image Loader
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //design a coordinate layout
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //firebase stuff
+
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+    implementation 'com.google.firebase:firebase-storage:16.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.1'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+
+    // circular image
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+    //RecyclerView
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    // Glide for displaying images
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+
+    // ffmpeg library to compress videos
+    implementation 'com.madhavanmalolan.android:ffmpegandroidlibrary:0.0.4'
+
+//    //Exoplayer
+//    implementation "com.google.android.exoplayer:exoplayer:r2.4.0"
+
+    // SeekBar circular
+//    implementation 'me.tankery.lib:circularSeekBar:2.7.1'
+
+//    // Custom GridView For Discover Section
+//    implementation 'com.felipecsl.asymmetricgridview:library:2.0.1'
+
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.5'
+
+}
+apply plugin: 'com.google.gms.google-services'

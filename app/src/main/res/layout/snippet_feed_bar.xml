@@ -1,0 +1,130 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/transparent"
+    >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileToolBar"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/disco"
+                    android:id="@+id/profile_icon"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toRightOf="@+id/profile_icon"
+                    android:src="@drawable/search"
+                    android:id="@+id/search_icon"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:layout_toRightOf="@+id/search_icon"
+                    android:text="Search"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/etSearch"
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+</merge>
+
+
+
+<!--<merge xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--&gt;-->
+
+<!--<android.support.design.widget.AppBarLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@color/transparent"-->
+    <!--&gt;-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/profileToolBar"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@drawable/toolbar_bg"-->
+        <!--android:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+
+        <!--&gt;-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/ic_profile"-->
+                <!--android:id="@+id/profile_icon"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--/>-->
+            <!--<ImageView-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_toRightOf="@+id/profile_icon"-->
+                <!--android:src="@drawable/ic_search_button"-->
+                <!--android:id="@+id/search_icon"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--/>-->
+
+            <!--<EditText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@null"-->
+                <!--android:layout_toRightOf="@+id/search_icon"-->
+                <!--android:hint="Search"-->
+                <!--android:textSize="22sp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:fontFamily="sans-serif-smallcaps"-->
+                <!--android:textColorHint="@color/white"-->
+                <!--android:id="@+id/search"-->
+                <!--/>-->
+
+        <!--</RelativeLayout>-->
+
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+
+
+<!--</android.support.design.widget.AppBarLayout>-->
+
+<!--</merge>-->

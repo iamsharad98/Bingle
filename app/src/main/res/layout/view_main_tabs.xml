@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="184dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:layout_gravity="bottom"
+    tools:background="@color/purple">
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/vst_center_button"-->
+        <!--android:layout_width="88dp"-->
+        <!--android:layout_height="88dp"-->
+        <!--android:layout_marginBottom="96dp"-->
+        <!--android:src="@drawable/circle_white"-->
+        <!--android:layout_gravity="center|bottom"-->
+        <!--android:background="@android:color/transparent"/>-->
+    <!--<ImageButton-->
+        <!--android:id="@+id/cameraSwitch"-->
+        <!--android:layout_width="20dp"-->
+        <!--android:layout_marginTop="44dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_marginBottom="96dp"-->
+        <!--android:src="@drawable/circle_white"-->
+        <!--android:background="@android:color/transparent"/>-->
+    <!---->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/circleSection"
+        android:layout_gravity="center|bottom"
+        >
+        <ImageButton
+            android:id="@+id/vst_center_button"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_marginBottom="70dp"
+            android:src="@drawable/circle_white"
+            android:background="@android:color/transparent"/>
+        <!--<ImageButton-->
+            <!--android:id="@+id/cameraSwitch"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_toRightOf="@+id/vst_center_button"-->
+            <!--android:layout_marginTop="44dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginBottom="96dp"-->
+            <!--android:src="@drawable/"-->
+            <!--android:background="@android:color/transparent"/>-->
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/vst_end_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="35dp"
+        android:src="@drawable/globe"
+        android:layout_marginRight="24dp" />
+
+    <ImageView
+        android:id="@+id/vst_start_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="start|bottom"
+        android:layout_marginBottom="35dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/friends"
+        android:layout_marginLeft="24dp" />
+
+    <View
+        android:id="@+id/vst_indicator"
+        android:layout_width="48dp"
+        android:layout_height="4dp"
+        android:background="@drawable/rounded_line"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/vst_bottom_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:padding="3dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/photos"/>
+
+
+</FrameLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View android:id="@+id/statusBarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/surfaceView"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/topToolbar">
+
+        <include layout="@layout/snippet_camera_bar"/>
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="10"-->
+        <!--android:background="@drawable/underline_transparent_background"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--&gt;-->
+
+        <!--<Button-->
+            <!--android:id="@+id/profileButton"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1.5"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:background="@drawable/ic_profile"-->
+            <!--android:layout_marginTop="13dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--/>-->
+
+        <!--<EditText-->
+            <!--android:layout_width="0dp"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:layout_weight="5.5"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:hint="Search..."-->
+            <!--android:id="@+id/etSearch"-->
+            <!--android:background="@null"-->
+            <!--/>-->
+        <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1.5"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:layout_toRightOf="@+id/custombackArrow"-->
+            <!--android:src="@drawable/ic_search_button"-->
+            <!--android:id="@+id/search_icon"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:id="@+id/switch_camera"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1.5"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginTop="13dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@drawable/ic_rotate_cam" />-->
+    <!--</LinearLayout>-->
+
+</FrameLayout>

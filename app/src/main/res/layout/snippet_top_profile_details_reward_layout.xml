@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/badge"
+        android:scaleType="centerInside"
+        android:background="@drawable/reward"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/challange"
+        android:layout_below="@+id/badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Challange"
+        android:textColor="@color/yellow"
+        android:background="@drawable/stylish_button"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

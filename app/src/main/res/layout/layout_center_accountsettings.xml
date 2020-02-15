@@ -1,0 +1,49 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_border_bottom"
+            android:text="Account Settings"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textSettings"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/simple_button_pressed"
+                android:text="Edit Profile"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:padding="4dp"/>
+            <TextView
+                android:id="@+id/tvLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/simple_button_pressed"
+                android:text="Logout"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:padding="4dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</merge>

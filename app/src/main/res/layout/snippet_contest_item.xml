@@ -1,0 +1,107 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        >
+
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postImageLayout"
+            >
+
+            <!-- postImage-->
+            <in.komu.komu.Utils.SquareImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/indiaflag2"
+                android:scaleType="centerCrop"
+                android:layout_margin="6dp"
+                android:id="@+id/postImage"/>
+
+            <ImageView
+                android:src="@drawable/frame_discover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/transparent_with_bottom_line"
+                >
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:text="#delhiContestTop100"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+            <!--   image caption-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="15dp"
+                >
+
+                <TextView
+                    android:id="@+id/reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Win Cash Prize Of 50000rs"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_below="@id/reward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Started On: "
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/dateStamp"
+                    android:layout_below="@id/reward"
+                    android:layout_toRightOf="@+id/text"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TODAY"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+</merge>

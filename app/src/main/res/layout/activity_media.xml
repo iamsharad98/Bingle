@@ -1,0 +1,187 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videoSection"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/relLayout1">
+    <!--<SurfaceView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/surfaceView"-->
+    <!--android:layout_below="@id/relLayout1"-->
+    <!--&gt;-->
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relLayout1" />
+
+    <ImageView
+        android:id="@+id/playVideo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play" />
+
+    <ImageView
+        android:id="@+id/pauseVideo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_pause" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center" />
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/postImageLayout"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@color/shadow_black">-->
+
+        <!--&lt;!&ndash;Heart Layout&ndash;&gt;-->
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/layoutheart"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--&lt;!&ndash;Heart Big One&ndash;&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/heartLayout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_heart_red"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:src="@drawable/vector_heart_red"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/image_heart"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:src="@drawable/vector_heart_white"-->
+                    <!--android:visibility="visible" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--&lt;!&ndash;Heart small one&ndash;&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/heartLayout"-->
+                <!--android:layout_marginLeft="20dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/likeCount"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:text="0"-->
+                    <!--android:textColor="@color/cute_white"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/miniRedHeart"-->
+                    <!--android:layout_width="10dp"-->
+                    <!--android:layout_height="10dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="1dp"-->
+                    <!--android:layout_toRightOf="@+id/likeCount"-->
+                    <!--android:src="@drawable/vector_heart_red" />-->
+            <!--</RelativeLayout>-->
+
+        <!--</RelativeLayout>-->
+
+
+        <!--&lt;!&ndash;Comment Layout&ndash;&gt;-->
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/commentLayout"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_toRightOf="@+id/layoutheart"-->
+
+
+            <!--&gt;-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/ic_comment"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:src="@drawable/speech_bubble" />-->
+
+            <!--&lt;!&ndash;Comment small one&ndash;&gt;-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/miniCommentLayout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/ic_comment"-->
+                <!--android:layout_marginTop="3dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/commentCount"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:text="0"-->
+                    <!--android:textColor="@color/cute_white"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/miniComment"-->
+                    <!--android:layout_width="13dp"-->
+                    <!--android:layout_height="13dp"-->
+                    <!--android:layout_marginLeft="2dp"-->
+                    <!--android:layout_toRightOf="@+id/commentCount"-->
+                    <!--android:src="@drawable/speech_bubble" />-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--&lt;!&ndash;Share &ndash;&gt;-->
+        <!--<ImageView-->
+            <!--android:id="@+id/ic_share"-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_toRightOf="@+id/commentLayout"-->
+            <!--android:src="@drawable/ic_arrow_share" />-->
+
+        <!--&lt;!&ndash;&lt;!&ndash;Ellipses&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/optionPost"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="30dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="30dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/ic_ellipses"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginRight="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:visibility="visible" />&ndash;&gt;-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--</SurfaceView>-->
+</FrameLayout>

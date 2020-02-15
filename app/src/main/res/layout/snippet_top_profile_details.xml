@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/countryFlag"
+        android:scaleType="centerInside"
+        android:background="@drawable/indian_flag"/>
+
+    <TextView
+        android:id="@+id/textRank"
+        android:layout_below="@+id/countryFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rank:"
+        android:textColor="@color/yellow"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beginner"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textRank"/>
+    <TextView
+        android:id="@+id/textMatchWon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match Won:"
+        android:textColor="@color/yellow"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/rank"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/matchWon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22 out of 40"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textMatchWon"/>
+    <TextView
+        android:id="@+id/textSkill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skill:"
+        android:textColor="@color/yellow"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/matchWon"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/skill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dancer"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textSkill"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <!--<include layout="@layout/snippet_top_profilebar"/>-->
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/postImageLayout"
+        >
+
+        <!-- postImage-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@drawable/banddanc"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:id="@+id/postImage"/>-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_profile_dark"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="10dp"
+                android:id="@+id/profile_photo"
+                android:layout_centerHorizontal="true"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/profile_photo"
+                android:layout_centerHorizontal="true"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sharad Pareek, "
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="27sp"
+                        android:maxLength="30"
+                        android:layout_marginLeft="5dp"/>
+                    <TextView
+                        android:id="@+id/userAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:layout_toRightOf="@+id/username"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textSize="22sp"
+                        android:layout_marginLeft="5dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Member Of Programmer Society"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/loading_image"
+                        android:scaleType="centerCrop"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1dp"
+                        android:id="@+id/origin_photo"
+                        />
+
+                    <TextView
+                        android:id="@+id/origin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rajasthan, India"
+                        android:layout_toRightOf="@+id/origin_photo"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:background="@color/shadow_grey"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_below="@id/imgCaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I am going to be successfull, "
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:id="@+id/description2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+                    android:text="not immediately but definitely"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/dateStamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Active: Today"
+                    android:textColor="@color/shadow_white"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

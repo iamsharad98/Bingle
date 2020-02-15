@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cute_light_grey">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/cutest_grey_item"
+        android:src="@drawable/ic_profile_dark" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/profile_photo"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@color/cutest_grey_item"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/textNotification"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/username"
+            android:text="comment on your photo"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/light_grey"
+            android:textStyle="bold|italic"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"/>
+
+        <in.komu.komu.Utils.SquareImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/loading_image"
+            android:scaleType="centerCrop"
+            android:layout_toRightOf="@+id/textNotification"
+            android:id="@+id/postImage"/>
+
+        <TextView
+            android:id="@+id/timeStamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@color/shadow_black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/username"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

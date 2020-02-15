@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<com.eschao.android.widget.elasticlistview.ElasticListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:paddingLeft="5dp"-->
+        <!--android:paddingRight="5dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:cacheColorHint="@color/transparent"-->
+        <!--android:listSelector="@color/transparent"-->
+        <!--android:dividerHeight="1px"-->
+        <!--android:scrollbars="vertical"-->
+        <!--android:id="@+id/listView"-->
+        <!--android:overScrollMode="never"-->
+        <!--android:fadingEdge="vertical"-->
+        <!--android:divider="@color/transparent_green"-->
+        <!--/>-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stylish_button"
+        android:text="Their is No Post"
+        android:textSize="30sp"
+        android:id="@+id/text"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        android:id="@+id/text2"
+        android:layout_below="@+id/text"
+        android:padding="15dp"
+        android:textColor="@color/link_blue"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

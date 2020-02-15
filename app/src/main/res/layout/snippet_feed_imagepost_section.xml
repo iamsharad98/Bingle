@@ -1,0 +1,279 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postImageLayout"
+        >
+
+        <!-- postImage-->
+            <in.komu.komu.Utils.SquareImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/loading_image"
+                android:scaleType="centerCrop"
+                android:layout_margin="6dp"
+                android:id="@+id/postImage"/>
+
+            <ImageView
+                android:background="@drawable/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        <!--<com.makeramen.roundedimageview.RoundedImageView-->
+            <!--android:id="@+id/postImage"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:riv_corner_radius_top_left="15dp"-->
+            <!--app:riv_corner_radius_top_right="15dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/snapchatlogo"/>-->
+
+
+        <!--  image username-->
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_photo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_prof"/>
+
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profile_photo"
+                android:text="@string/loading"
+                android:textColor="@color/low_opacity_white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <!--   image caption-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="15dp"
+                >
+
+                <TextView
+                        android:id="@+id/imgCaption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sampleComment"
+                        android:textColor="@color/white"
+                    android:textStyle="bold"
+                        android:textSize="22sp"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:id="@+id/dateStamp"
+                    android:layout_below="@id/imgCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <!--<TextView-->
+                    <!--android:id="@+id/contestCategory"-->
+                    <!--android:layout_below="@id/imgCaption"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toRightOf="@+id/dateStamp"-->
+                    <!--android:text="#delhiContestTop100"-->
+                    <!--android:textColor="@color/link_blue"-->
+                    <!--android:textStyle="italic"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginBottom="5dp"/>-->
+
+
+
+            </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postImageLayout"
+        android:background="@drawable/bottom_frame"
+        >
+
+        <!--Heart Layout-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutheart"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <!--Heart Big One-->
+            <RelativeLayout
+            android:id="@+id/heartLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/image_heart_red"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_heart_red"
+                android:visibility="invisible"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/image_heart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_heart_white"
+                android:visibility="visible"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+            <!--Heart small one-->
+            <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heartLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+                >
+
+            <TextView
+                android:id="@+id/likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"/>
+
+            <ImageView
+                android:id="@+id/miniRedHeart"
+                android:layout_toRightOf="@+id/likeCount"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_heart_red"
+                />
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <!--Comment Layout-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/layoutheart"
+            android:id="@+id/commentLayout"
+
+
+            >
+
+        <ImageView
+            android:id="@+id/ic_comment"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_comment"
+            />
+
+
+            <!--Comment small one-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/miniCommentLayout"
+                android:layout_below="@+id/ic_comment"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/commentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/miniComment"
+                    android:layout_toRightOf="@+id/commentCount"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_comment"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--Share -->
+        <ImageView
+            android:id="@+id/ic_share"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/commentLayout"
+            android:src="@drawable/ic_arrow_share"
+             />
+
+        <!--Ellipses-->
+        <ImageView
+            android:id="@+id/optionPost"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_ellipses"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</merge>

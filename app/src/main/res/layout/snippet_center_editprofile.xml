@@ -1,0 +1,264 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/profile_photo"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"
+                android:src="@drawable/ic_profile_dark"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Photo"
+                android:id="@+id/changeProfilePhoto"
+                android:layout_below="@+id/profile_photo"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/link_blue"
+                android:textSize="16sp"/>
+
+
+
+            <!-- username section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/changeProfilePhoto"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/relLayout1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_username"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ic_username"/>
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ic_username"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:maxLength="25"
+                    android:background="@null"
+                    android:hint="Username"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    />
+
+            </RelativeLayout>
+
+
+            <!-- display_name section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relLayout1"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/relLayout2"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_display_name"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ic_display_name"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_display_name"
+                    android:layout_centerVertical="true"
+                    android:maxLength="25"
+                    android:layout_toRightOf="@+id/ic_display_name"
+                    android:hint="Full Name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <!-- website section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relLayout2"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/relLayout3"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_web"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ic_web"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_website"
+                    android:layout_toRightOf="@+id/ic_web"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:maxLength="25"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginLeft="5dp"
+                    android:hint="Website"
+                    android:textColorHint="@color/black"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    />
+
+            </RelativeLayout>
+
+
+            <!-- description section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relLayout3"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/relLayout4"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_description"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ic_description"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_description"
+                    android:layout_toRightOf="@+id/ic_description"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions"
+                    android:hint="Description"
+                    android:layout_marginLeft="5dp"
+                    android:maxLength="70"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="PRIVATE INFORMATION"
+                android:layout_below="@id/relLayout4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/textPrivateInfo"/>
+
+
+            <!-- email section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textPrivateInfo"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/relLayout5"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_email"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ic_email"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_email"
+                    android:layout_toRightOf="@+id/ic_email"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:hint="Email"
+                    android:maxLength="25"
+                    android:layout_marginLeft="5dp"
+                    android:textColorHint="@color/grey"
+                    android:textColor="@color/black"
+                    />
+
+            </RelativeLayout>
+
+            <!-- phone number section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relLayout5"
+                android:background="@drawable/grey_border_bottom"
+                android:id="@+id/relLayout6"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_phone"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ic_phone"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_phoneNumber"
+                    android:layout_toRightOf="@+id/ic_phone"
+                    android:layout_centerVertical="true"
+                    android:hint="Phone Number"
+                    android:inputType="number"
+                    android:textColorHint="@color/grey"
+                    android:textColor="@color/black"
+                    android:maxLength="12"
+                    />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:id="@+id/edit_progressbar"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</merge>
