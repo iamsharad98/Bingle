@@ -28,8 +28,9 @@ CONNECT WITH US:
 
 •www.bingle.in
 
-
+•https://play.google.com/store/apps/details?id=in.komu.komu&hl=en_US
 •Facebook: https://www.facebook.com/bingleofficial/
+
 
 Need Help: * contact@bingle.in
            * shrdprk34@gmail.com
