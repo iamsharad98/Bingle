@@ -25,10 +25,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <!-- <meta-data -->
-        <!-- android:name="com.google.android.gms.ads.in.komu.komu" -->
-        <!-- android:value="ca-app-pub-3107402835218906~8122581888"/> -->
         <activity
             android:name=".SplashScreenActivity"
             android:screenOrientation="portrait"
